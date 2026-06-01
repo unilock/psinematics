@@ -54,6 +54,18 @@
     },
     {
       "type": "psi:psinematics_spellpiece_spotlight",
+      "spellpiece": "psinematics:block_mass",
+      "title": "psinematics.spellpiece.block_mass",
+      "text": "psinematics.book.entry.tutorial.block_mass"
+    },
+    {
+      "type": "psi:psinematics_spellpiece_spotlight",
+      "spellpiece": "psinematics:sub_level_mass",
+      "title": "psinematics.spellpiece.sub_level_mass",
+      "text": "psinematics.book.entry.tutorial.sub_level_mass"
+    },
+    {
+      "type": "psi:psinematics_spellpiece_spotlight",
       "spellpiece": "psinematics:add_momentum",
       "title": "psinematics.spellpiece.add_momentum",
       "text": "psinematics.book.entry.tutorial.add_momentum"

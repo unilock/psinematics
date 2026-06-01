@@ -20,6 +20,10 @@
   "psinematics.spellpiece.containing_sub_level.desc": "Returns the construct that the target point is inside of",
   "psinematics.spellpiece.locate_center_of_mass": "Operator: Locate Center of Mass",
   "psinematics.spellpiece.locate_center_of_mass.desc": "Locates the center of mass of the target construct",
+  "psinematics.spellpiece.block_mass": "Operator: Block Mass",
+  "psinematics.spellpiece.block_mass.desc": "Gets the mass of a block",
+  "psinematics.spellpiece.sub_level_mass": "Operator: Construct Mass",
+  "psinematics.spellpiece.sub_level_mass.desc": "Gets the total mass of a construct",
 
   "psinematics.spellpiece.begin_assembly": "Trick: Begin Assembly",
   "psinematics.spellpiece.begin_assembly.desc": "Begins creation of a new construct (via blockworks spells)",
@@ -44,5 +48,7 @@
   "psinematics.book.entry.tutorial.containing_sub_level": "Spells may look for constructs anywhere in the world...",
   "psinematics.book.entry.tutorial.current_sub_level": "...or ask for the caster's vessel. Unlike $(piece)Selector: Containing Construct$(0), this finds the construct the caster is riding on, even if they're only stood on top, or riding a creature standing on it, etc.",
   "psinematics.book.entry.tutorial.locate_center_of_mass": "Most spells manipulating constructs will prefer to do so at their center of mass, to keep it stable. This is straightforward in a spell, though costs additional complexity for the convenience.",
+  "psinematics.book.entry.tutorial.block_mass": "Mass can be queried for blocks in the world...",
+  "psinematics.book.entry.tutorial.sub_level_mass": "...as well as for constructs as a whole, once assembled. This works regardless of their size or mass (why else would you need to ask?).",
   "psinematics.book.entry.tutorial.add_momentum": "Unlike when manipulating entities, spells apply momentum to constructs rather than raw motion. Heavier constructs will be affected less."
 }

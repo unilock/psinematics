@@ -1,7 +1,9 @@
 package luna.psinematics;
 
+import luna.psinematics.operators.BlockMassOp;
 import luna.psinematics.operators.ContainingSubLevelOp;
 import luna.psinematics.operators.LocateCenterOfMassOp;
+import luna.psinematics.operators.SubLevelMassOp;
 import luna.psinematics.selectors.CurrentAssemblySelector;
 import luna.psinematics.selectors.CurrentSubLevelSelector;
 import luna.psinematics.tricks.*;
@@ -30,19 +32,21 @@ import java.util.Map;
 public class Psinematics{
 	public static final String MODID = "psinematics";
 	
-	private static final Map<String, Class<? extends SpellPiece>> PIECES = Map.of(
-			"current_sub_level", CurrentSubLevelSelector.class,
-			"current_assembly", CurrentAssemblySelector.class,
+	private static final Map<String, Class<? extends SpellPiece>> PIECES = Map.ofEntries(
+			Map.entry("current_sub_level", CurrentSubLevelSelector.class),
+			Map.entry("current_assembly", CurrentAssemblySelector.class),
 			
-			"containing_sub_level", ContainingSubLevelOp.class,
-			"locate_center_of_mass", LocateCenterOfMassOp.class,
+			Map.entry("containing_sub_level", ContainingSubLevelOp.class),
+			Map.entry("locate_center_of_mass", LocateCenterOfMassOp.class),
+			Map.entry("block_mass", BlockMassOp.class),
+			Map.entry("sub_level_mass", SubLevelMassOp.class),
 			
-			"begin_assembly", BeginAssemblyTrick.class,
-			"end_assembly", EndAssemblyTrick.class,
-			"assemble_connected", AssembleConnectedTrick.class,
-			"disassemble", DisassembleTrick.class,
+			Map.entry("begin_assembly", BeginAssemblyTrick.class),
+			Map.entry("end_assembly", EndAssemblyTrick.class),
+			Map.entry("assemble_connected", AssembleConnectedTrick.class),
+			Map.entry("disassemble", DisassembleTrick.class),
 			
-			"add_momentum", AddMomentumTrick.class
+			Map.entry("add_momentum", AddMomentumTrick.class)
 	);
 	
 	public static final TagKey<Class<? extends SpellPiece>> BLOCK_PLACEMENT_TRICKS = TagKey.create(PsiAPI.SPELL_PIECE_REGISTRY_TYPE_KEY, psinId("block_placement_tricks"));
