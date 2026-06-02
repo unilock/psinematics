@@ -1,0 +1,9 @@
+{
+  "selector": "psi:conjured",
+  "priority": 1001,
+  "properties": {
+    "sable:mass": 1,
+    "sable:friction": 0.1,
+    "sable:floating_material": "psinematics:conjured"
+  }
+}
